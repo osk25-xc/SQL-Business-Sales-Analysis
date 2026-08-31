@@ -118,3 +118,7 @@ SQL-Business-Sales-Analysis/
 
 └── .gitignore
 
+
+## 📌 Project Status
+
+Completed SQL business sales analysis using MySQL.
