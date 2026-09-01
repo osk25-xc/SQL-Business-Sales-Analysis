@@ -122,3 +122,8 @@ SQL-Business-Sales-Analysis/
 ## 📌 Project Status
 
 Completed SQL business sales analysis using MySQL.
+## 📅 Project Update
+
+- Added advanced SQL business analysis queries.
+- Added revenue, profit, customer, product and regional analysis.
+- Added ranking and month-over-month analysis using SQL window functions.
