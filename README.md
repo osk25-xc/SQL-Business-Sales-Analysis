@@ -127,3 +127,12 @@ Completed SQL business sales analysis using MySQL.
 - Added advanced SQL business analysis queries.
 - Added revenue, profit, customer, product and regional analysis.
 - Added ranking and month-over-month analysis using SQL window functions.
+## Business Insights
+
+- Analyzed category-wise revenue and profit
+- Identified top profitable products
+- Analyzed top customers by revenue
+- Compared regional sales performance
+- Studied monthly sales trends
+- Identified high-sales but low-profit products
+- Calculated overall orders, revenue, profit, and average order value
