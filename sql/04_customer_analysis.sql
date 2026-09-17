@@ -38,3 +38,12 @@ SELECT
 FROM sales
 GROUP BY region
 ORDER BY total_profit DESC;
+-- Top 10 Customers by Revenue
+SELECT
+    customer_id,
+    ROUND(SUM(quantity * unit_price), 2) AS total_revenue,
+    SUM(quantity) AS total_items
+FROM sales
+GROUP BY customer_id
+ORDER BY total_revenue DESC
+LIMIT 10;
