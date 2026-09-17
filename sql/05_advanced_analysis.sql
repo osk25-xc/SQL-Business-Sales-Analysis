@@ -74,3 +74,10 @@ SELECT
     ) AS revenue_change
 FROM monthly_sales
 ORDER BY month;
+-- Monthly Revenue Analysis
+SELECT
+    DATE_FORMAT(order_date, '%Y-%m') AS month,
+    ROUND(SUM(quantity * unit_price), 2) AS monthly_revenue
+FROM sales
+GROUP BY DATE_FORMAT(order_date, '%Y-%m')
+ORDER BY month;
