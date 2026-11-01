@@ -1,46 +1,53 @@
 # SQL Business Sales Analysis | MySQL
 
-A SQL portfolio project focused on answering common business questions using e-commerce sales data.
+A practical SQL project for answering business questions using an e-commerce sales dataset.
 
-## Business Objective
-Convert order-level data into useful summaries of revenue, profit, product performance, customer contribution, regional results, and monthly change.
+## Business objective
 
-## Business Questions
-- What are total revenue and profit?
-- Which products, categories, customers, and regions perform best?
-- What is the average order value?
-- How does monthly revenue change over time?
-- Which products have strong sales but weaker profitability?
+Transform transaction data into repeatable summaries of revenue, profit, orders, product performance, customer contribution, and monthly trends.
 
-## Tools
-- MySQL
-- SQL
-- Git and GitHub
+## Business questions
 
-## SQL Concepts
+- What are total net revenue, profit, and distinct orders?
+- Which products and categories contribute most?
+- Which customers have the highest recorded revenue?
+- How does revenue change month over month?
+- Which categories have lower profitability?
+
+## Tools and SQL concepts
+
+MySQL · MySQL Workbench · SQL
+
 - Filtering, sorting, and aggregation
-- `GROUP BY` and `HAVING`
-- `CASE WHEN`
-- Subqueries and Common Table Expressions (CTEs)
+- `GROUP BY`, `HAVING`, and `CASE WHEN`
+- Subqueries and CTEs
 - Ranking and window functions
 - `LAG()` for period-over-period comparisons
 
-## Repository Structure
-- `data/` — sales dataset, where included
-- `sql/` — database setup and analysis scripts
-- `README.md` — project guide
+## Repository structure
 
-## How to Run
+- `sql/` — database setup and analysis scripts.
+- `sql/10_monthly_performance.sql` — monthly revenue, profit, order counts, and category margin examples.
+- Check the repository data files for the dataset and expected schema.
+
+## How to run
+
 1. Open MySQL Workbench or another MySQL client.
-2. Run the database setup script, if present.
-3. Confirm the table and column names match the analysis scripts.
-4. Execute the SQL files in sequence and review the result sets.
+2. Run the database setup script, if provided.
+3. Confirm the database and table names used by each script.
+4. Check column names and data types against the source dataset.
+5. Execute the SQL files and inspect the result sets.
 
-## Business Value
-The project demonstrates how SQL can power repeatable reporting and help business users compare performance across products, customers, regions, and time. Results depend on the data provided; no unsupported business impact is claimed.
+## Metric definitions
 
-## Skills Demonstrated
-SQL querying · KPI reporting · Business analysis · CTEs · Window functions · Period-over-period analysis
+Use the same revenue definition consistently across queries. Distinct order count should use the order identifier, not the number of line-item rows. Calculate margin from aggregated profit and revenue, not by averaging row-level percentages.
 
----
-Created by **Omkar S. Kshirsagar** | [GitHub Profile](https://github.com/osk25-xc)
+## Results and limitations
+
+The SQL scripts must be run against the current project schema before publishing numerical findings. Document exclusions such as cancelled orders, discounts, and returns when applicable.
+
+## Skills demonstrated
+
+MySQL · Business KPI reporting · CTEs · Window functions · Customer and product analysis · Monthly trend analysis
+
+Maintained by [Omkar S. Kshirsagar](https://github.com/osk25-xc).
